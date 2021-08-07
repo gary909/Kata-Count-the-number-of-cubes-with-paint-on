@@ -1,5 +1,10 @@
 var countSquares = function(cuts){
-    return cuts * 2;
+    var sum = (6 * cuts * cuts) + 2;
+    if (sum == 2){
+        return 1;
+    } else {
+        return sum;
+    }
 }
 
 console.log(countSquares(5));
